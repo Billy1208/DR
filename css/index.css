@@ -579,7 +579,7 @@ form p {
 @media only screen and (min-width: 1000px){
     .section1 {
         width: 100vw;
-        height: 105vh;
+        height: 750px;
         background-image: url(img/Untitled-1@2x.png);
         background-size: 55%;
         background-repeat: no-repeat;
