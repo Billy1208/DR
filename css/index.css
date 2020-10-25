@@ -584,12 +584,11 @@ form p {
         background-position-x: 50px;
     }
     #topnav {
-        display: inline-flex;
+        display: flex;
+        align-items: center;
         position: absolute;
-        width: 80%;
-        align-content: center;
-        padding-left: 10%;
-        padding-right: 10%;
+        width: 70%;
+        padding-left: 15%;
         padding-top: 50px;
     }
     #topnav a {
@@ -606,6 +605,7 @@ form p {
         padding-top: 15px;
         border-radius: 10px;
         transition: 0.3s;
+        align-self: center;
     }
     #topnav a:hover {
         background-color: #00C6A0;
@@ -627,8 +627,8 @@ form p {
         font-family: 'Tajawal', sans-serif;
         font-size: 11pt;
         text-align: center;
-        padding-bottom: 10px;
-        padding-top: 15px;
+        padding-bottom: 12px;
+        padding-top: 16px;
         padding-left: 15px;
         padding-right: 15px;
         border: transparent;
