@@ -580,14 +580,17 @@ form p {
         background-image: url(img/Untitled-1@2x.png);
         background-size: 55%;
         background-repeat: no-repeat;
-        background-position-y: 40px;
+        background-position-y: 20px;
         background-position-x: 50px;
     }
     #topnav {
         display: inline-flex;
         position: absolute;
-        left: 27%;
-        top: 60px;
+        width: 80%;
+        align-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 50px;
     }
     #topnav a {
         font-family: 'Tajawal', sans-serif;
@@ -598,9 +601,15 @@ form p {
         color: #111;
         transition: 0.2s;
         text-decoration: none;
+        margin-top: 30px;
+        margin: auto;
+        padding-top: 15px;
+        border-radius: 10px;
+        transition: 0.3s;
     }
     #topnav a:hover {
-        color: #00C6A0;
+        background-color: #00C6A0;
+        color: #ffffff;
     }
     #header {
         margin: 0;
@@ -619,7 +628,7 @@ form p {
         font-size: 11pt;
         text-align: center;
         padding-bottom: 10px;
-        padding-top: 16px;
+        padding-top: 15px;
         padding-left: 15px;
         padding-right: 15px;
         border: transparent;
@@ -710,6 +719,12 @@ form p {
         margin-top: 20px;
         margin-left: 12px;
         display: none;
+    }
+    #articles {
+        margin-top: -210px;
+        background-color: #111;
+        background-repeat: no-repeat;
+        box-shadow: 5px 10px 5px #111;
     }
 
 }
