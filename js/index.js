@@ -191,3 +191,6 @@ function submit() {
   
   
 };
+if (window.innerWidth > 999){
+  document.getElementById("hi").innerHTML = "<h1>اهلا بكم مع <br> دكتور بيشوى نان</h1>"
+}
