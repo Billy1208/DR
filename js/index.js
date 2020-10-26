@@ -38,7 +38,8 @@ function seeMoreTak() {
     dots.style.display = "inline";
     btnText.innerHTML = "المزيد";
     moreText.style.display = "none";
-  } else {
+  } 
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "اقرأ اقل";
     moreText.style.display = "inline";
@@ -53,7 +54,8 @@ function seeMoreblod() {
     dots.style.display = "inline";
     btnText.innerHTML = "المزيد";
     moreText.style.display = "none";
-  } else {
+  } 
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "اقرأ اقل";
     moreText.style.display = "inline";
@@ -68,7 +70,8 @@ function seeMorelev() {
     dots.style.display = "inline";
     btnText.innerHTML = "المزيد";
     moreText.style.display = "none";
-  } else {
+  } 
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "اقرأ اقل";
     moreText.style.display = "inline";
@@ -83,7 +86,8 @@ function seeMoreblod2() {
     dots.style.display = "inline";
     btnText.innerHTML = "المزيد";
     moreText.style.display = "none";
-  } else {
+  } 
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "اقرأ اقل";
     moreText.style.display = "inline";
@@ -99,7 +103,8 @@ function seeMoreberiod() {
     dots.style.display = "inline";
     btnText.innerHTML = "المزيد";
     moreText.style.display = "none";
-  } else {
+  } 
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "اقرأ اقل";
     moreText.style.display = "inline";
@@ -114,7 +119,8 @@ function seeMore8oda() {
     dots.style.display = "inline";
     btnText.innerHTML = "المزيد";
     moreText.style.display = "none";
-  } else {
+  }
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "اقرأ اقل";
     moreText.style.display = "inline";
@@ -129,7 +135,8 @@ function seeMoreburn() {
     dots.style.display = "inline";
     btnText.innerHTML = "المزيد";
     moreText.style.display = "none";
-  } else {
+  } 
+  else {
     dots.style.display = "none";
     btnText.innerHTML = "اقرأ اقل";
     moreText.style.display = "inline";
@@ -220,11 +227,13 @@ function submit() {
       document.getElementById("bmr-bt4").style.display = "inline";
       document.getElementById("bmr-id2").style.display = "inline";
       
-    }else {
+    }
+    else {
       document.getElementById("erorr").style.display = "inline";
       document.getElementById("data1").style.display = "inline";
       document.getElementById("bmr-id").style.display = "none";
       document.getElementById("bmr-bt2").style.display = "inline";
+      document.getElementById("bmr-id2").style.display = "inline";
 
     }
 
@@ -233,7 +242,57 @@ function submit() {
   
 };
 function showSys() {
-  document.getElementById("idd5").style.display = "inline";
+  var x = document.getElementById("male").checked;
+  var y = document.getElementById("female").checked;
+  var weight = document.getElementById("weight").value;
+  var height = document.getElementById("height").value;
+  var age = document.getElementById("age").value;
+  if (x === true) {
+    var bmr = (13.397 * weight) + (4.799 * height) - (5.677 * age) + 88.362;
+    bmr = ~~bmr;
+  }
+  else{
+    var bmr = (9.247 * weight) + (3.098 * height) - (4.330 * age) + 447.593;
+    bmr = ~~bmr;
+  };
+  if (bmr < 1300) {
+    document.getElementById("idd5").style.display = "inline";
+  }
+  else if ((bmr > 1299) & (bmr <1500)){
+    document.getElementById("idd5").innerHTML = '<img src="img/1400.jpg" alt="system" id="img-idd5">';
+    document.getElementById("bmr-bt6").innerHTML = '<a href="img/1400.jpg" download="1400 Nutrition system">حفظ</a>'
+    document.getElementById("idd5").style.display = "inline";
+  }
+  else if ((bmr > 1499) & (bmr <1700)){
+    document.getElementById("idd5").innerHTML = '<img src="img/1600.jpg" alt="system" id="img-idd5">';
+    document.getElementById("bmr-bt6").innerHTML = '<a href="img/1600.jpg" download="1600 Nutrition system">حفظ</a>'
+    document.getElementById("idd5").style.display = "inline";
+  }
+  else if ((bmr > 1699) & (bmr <1900)){
+    document.getElementById("idd5").innerHTML = '<img src="img/1800.jpg" alt="system" id="img-idd5">';
+    document.getElementById("bmr-bt6").innerHTML = '<a href="img/1800.jpg" download="1800 Nutrition system">حفظ</a>'
+    document.getElementById("idd5").style.display = "inline";
+  }
+  else if ((bmr > 1899) & (bmr <2100)){
+    document.getElementById("idd5").innerHTML = '<img src="img/2000.jpg" alt="system" id="img-idd5">';
+    document.getElementById("bmr-bt6").innerHTML = '<a href="img/2000.jpg" download="2000 Nutrition system">حفظ</a>'
+    document.getElementById("idd5").style.display = "inline";
+  }
+  else if ((bmr > 2099) & (bmr <2300)){
+    document.getElementById("idd5").innerHTML = '<img src="img/2200.jpg" alt="system" id="img-idd5">';
+    document.getElementById("bmr-bt6").innerHTML = '<a href="img/2200.jpg" download="2200 Nutrition system">حفظ</a>'
+    document.getElementById("idd5").style.display = "inline";
+  }
+  else if ((bmr > 2299) & (bmr <2500)){
+    document.getElementById("idd5").innerHTML = '<img src="img/2400.jpg" alt="system" id="img-idd5">';
+    document.getElementById("bmr-bt6").innerHTML = '<a href="img/2400.jpg" download="2400 Nutrition system">حفظ</a>'
+    document.getElementById("idd5").style.display = "inline";
+  }
+  else if (bmr >= 2500){
+    document.getElementById("idd5").innerHTML = '<img src="img/2600.jpg" alt="system" id="img-idd5">';
+    document.getElementById("bmr-bt6").innerHTML = '<a href="img/2600.jpg" download="2600 Nutrition system">حفظ</a>'
+    document.getElementById("idd5").style.display = "inline";
+  }
   document.getElementById("bmr-id6").style.display = "inline";
   document.getElementById("bmr-bt6").style.display = "inline";
 }
