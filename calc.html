@@ -14,12 +14,19 @@
   </head>
 
   <body>
-    
+    <div class="topnav" id="topnav">
+      <a href="calc.html">BMR حاسبة ال</a>
+      <a href="about.html">معلومات عنا</a>
+      <a href="#">قائمة السعرات</a>
+      <a href="articles.html">مقالات</a>
+      <a href="index.html#form">تواصل معنا </a>
+      <a href="index.html">الصفحة الرئيسية</a>
+    </div>
     <main class="section1">
       <div class="container"> 
         <div class="sidenav" id="Sidenav">
           <a href="index.html">الصفحة الرئيسية</a>
-          <a href="#form">تواصل معنا </a>
+          <a href="index.html#form">تواصل معنا </a>
           <a href="articles.html">مقالات</a>
           <a href="#">قائمة السعرات</a>
           <a href="about.html">معلومات عنا</a>
@@ -43,6 +50,7 @@
               <a href="index.html"><img src="img/beshoy nan logo 3@3x.png" alt="Dr Beshoy Nan"></a>
           </div>
         </div>
+      </div>
         
         <div class="row">
             <div class="hi">
@@ -50,29 +58,8 @@
             </div>
         </div>
            <div class="container" id="form1">
-                <div class="row" id="ma">
-                  <div class="col">
-                    <h1>النوع</h1>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="calc">
-                            <img src="css/img/male.png" alt="male">
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
-                              <label class="form-check-label" for="inlineRadio1"></label>
-                            </div>
-                            <img src="css/img/female.png" alt="female">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
-                                <label class="form-check-label" for="inlineRadio2"></label>
-                            </div>  
-                          </div>
-                        </div>
-                  </div>
                   <div class="range-slider">
-                      <h1> (kg) الوزن</h1>
+                      <h1 id="kg"> (kg) الوزن</h1>
                       <input class="range-slider__range" type="range" value="0" min="0" max="200" id="weight">
                       <span class="range-slider__value">0</span>
                   </div>
@@ -85,6 +72,27 @@
                   <h1>السن</h1>
                   <input class="range-slider__range" type="range" value="0" min="0" max="100" id="age">
                   <span class="range-slider__value">0</span>
+                </div>
+                <div class="row" id="ma">
+                  <div class="col">
+                    <h1>النوع</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                      <div class="calc">
+                          <img src="css/img/male.png" alt="male">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
+                            <label class="form-check-label" for="inlineRadio1"></label>
+                          </div>
+                          <img src="css/img/female.png" alt="female">
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
+                              <label class="form-check-label" for="inlineRadio2"></label>
+                          </div>  
+                        </div>
+                      </div>
                 </div>
                 <div class="row" id="bmr-id">
                   <div class="bmr-bt">
@@ -111,14 +119,35 @@
                     <h1 class="cond" id="cond"></h1>
                   </div> 
                 </div>
-                <div class="row">
-                  <div class="col" id="bmr-id2">
+                <div class="row" id="bmr-id4">
+                  <div class="col" id="idd4">
+                    <div class="bmr-bt4" id="bmr-bt4">
+                      <a href="#idd5" onclick="showSys()">الحصول علي نظام غذائي مناسب</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="sys">
+                  <div class="col" id="idd5">
+                    <img src="img/1200.jpg" alt="system">
+                  </div>
+                </div>
+                <div class="row"  id="bmr-id6">
+                  <div class="col" id="idd6">
+                    <div class="bmr-bt6" id="bmr-bt6">
+                      <a href="img/1200.jpg" download="1200 Nutrition system">حفظ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row"  id="bmr-id2">
+                  <div class="col" id="idd2">
                     <div class="bmr-bt2" id="bmr-bt2">
                       <a href="calc.html">اعادة المحاولة</a>
                     </div>
                   </div>
                 </div>
               </div>
+
+
             </div>
       </div>
     </main>
