@@ -247,6 +247,31 @@ body {
     border-radius: 25px;
     text-decoration: none;
 }
+.bmr-bt3 {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.bmr-bt3 a {
+    color: #ffffff;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 12pt;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+    background: linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00C6A0",endColorstr="##00856B",GradientType=1);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 55px;
+    padding-left: 55px;
+    border: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+}
+#calen {
+    width: 20px;
+    margin: -5px auto;
+}
 .section2 {
     padding: 10%;
 }
@@ -388,6 +413,55 @@ form p {
     margin-right: 10px;
 }
 @media only screen and (max-height: 700px){
+    .hi {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2vh;
+        font-family: ara hamah;
+        font-size: 33pt;
+    }
+    .bmr-bt {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .bmr-bt a {
+        color: #ffffff;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 12pt;
+        background: rgb(2,0,36);
+        background: -moz-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        background: linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00C6A0",endColorstr="##00856B",GradientType=1);
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-right: 25px;
+        padding-left: 25px;
+        border: transparent;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+    .bmr-bt3 {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .bmr-bt3 a {
+        color: #ffffff;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 12pt;
+        background: rgb(2,0,36);
+        background: -moz-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        background: linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00C6A0",endColorstr="##00856B",GradientType=1);
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-right: 55px;
+        padding-left: 55px;
+        border: transparent;
+        border-radius: 25px;
+        text-decoration: none;
+    }
     .sidenav a {
         font-family: 'Tajawal', sans-serif;
         padding: 8px 8px 8px 32px;
@@ -545,7 +619,7 @@ form p {
     .hi {
         text-align: center;
         margin: 0 auto;
-        margin-top: 5vh;
+        margin-top: 0vh;
         font-family: ara hamah;
         font-size: 33pt;
     }
@@ -648,6 +722,9 @@ form p {
         width: 100%;
         margin-top: 15vh;
     }
+    #lapel {
+        margin: 60px;
+    }
     .hi {
         text-align: right;
         position: absolute;
@@ -678,6 +755,7 @@ form p {
         border: transparent;
         border-radius: 25px;
         text-decoration: none;
+
     }
     .dot1 {
         height: 50px;
@@ -834,6 +912,34 @@ form p {
         line-height: 15px;
         margin-right: 15px;
         margin-bottom: 30px;
+    }
+    .bmr-bt3 {
+        position: absolute;
+        right: 75px;
+        top: 450px;
+        margin-top: 30px;
+        
+    }
+    .bmr-bt3 a {
+        color: #ffffff;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 14pt;
+        background: rgb(2,0,36);
+        background: -moz-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        background: linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00C6A0",endColorstr="##00856B",GradientType=1);
+        padding-top: 12px;
+        padding-bottom: 8px;
+        padding-right: 60px;
+        padding-left: 60px;
+        border: transparent;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+    #calen {
+        width: 20px;
+        margin: -5px auto;
     }
 
 }
