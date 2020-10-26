@@ -108,7 +108,7 @@ body {
     padding: 0px;
 }
 .section1 {
-    width: 100vw;
+    width: 100%;
 
 }
 .dot1 {
@@ -224,6 +224,7 @@ body {
 }
 .calc {
     text-align: center;
+    margin-left: 15px;
 }
 .calc img {
     width: 50px;
@@ -274,15 +275,45 @@ body {
     font-size: 14pt;
     text-align: center;
 }
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #111;
+    margin-top: -8px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
 
   .range-slider {
     margin: 50px 0 0 0%;
   }
   .range-slider {
+      color: #111;
     width: 100%;
   }
   .range-slider__range {
-    -webkit-appearance: none;
+    color: #111;
     width: calc(100% - (73px));
     height: 10px;
     border-radius: 5px;
@@ -301,10 +332,10 @@ body {
     transition: background 0.15s ease-in-out;
   }
   .range-slider__range::-webkit-slider-thumb:hover {
-    background: #1abc9c;
+    background: #111;
   }
   .range-slider__range:active::-webkit-slider-thumb {
-    background: #1abc9c;
+    background: #111;
   }
   .range-slider__range::-moz-range-thumb {
     width: 20px;
@@ -321,8 +352,14 @@ body {
   .range-slider__range:active::-moz-range-thumb {
     background: #111;
   }
+  .range-slider__range::-webkit-range-thumb:hover {
+    background: #111;
+  }
+  .range-slider__range:active::-webkit-range-thumb {
+    background: #111;
+  }
   .range-slider__range:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px transparent;
   }
   .range-slider__value {
     display: inline-block;
@@ -353,6 +390,11 @@ body {
   }
   input::-moz-focus-inner, input::-moz-focus-outer {
     border: 0;
+  }
+
+  .form-check-inline {
+    display: inline-flex;
+    width: 10px;
   }
   
 .bmr-bt {
