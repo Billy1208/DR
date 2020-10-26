@@ -23,6 +23,9 @@ var rangeSlider = function(){
     });
   });
 };
+if (window.innerWidth > 999){
+  document.getElementById("hi").innerHTML = "<h1>اهلا بكم مع <br> دكتور بيشوى نان</h1>"
+}
   
 
 
@@ -174,11 +177,49 @@ function submit() {
     };
     document.getElementById("data1").style.display = "inline";
     document.getElementById("bmr-bt2").style.display = "inline";
+    document.getElementById("bmr-bt4").style.display = "inline";
+    document.getElementById("bmr-id2").style.display = "inline";
+    document.getElementById("bmr-id4").style.display = "inline";
+
   }
   else if (x === false) {
     if (y === true) {
       var bmr = (9.247 * weight) + (3.098 * height) - (4.330 * age) + 447.593;
+      bmr = ~~bmr;
+      var bmi = (weight /((height / 100) * (height / 100)));
+      bmi = ~~bmi;
       document.getElementById("bmr-id").style.display = "none";
+      document.getElementById("calories").style.display = "inline";
+      document.getElementById("data2").style.display = "inline";
+      document.getElementById("calories").innerHTML = ("حصتك اليومية من السعرات الحرارية : " + bmr + " سعر");
+      document.getElementById("bmi-lap").style.display = "inline";
+      document.getElementById("data3").style.display = "inline";
+      document.getElementById("bmi-lap").innerHTML = ("موشر السمنة : " + bmi);
+      if (bmi >= 30) {
+        document.getElementById("cond").style.display = "inline";
+        document.getElementById("data4").style.display = "inline";
+        document.getElementById("cond").innerHTML = ("الوضع الصحي : سمنة ");
+      }
+      else if ((bmi >= 25) & (bmi < 30)){
+        document.getElementById("cond").style.display = "inline";
+        document.getElementById("data4").style.display = "inline";
+        document.getElementById("cond").innerHTML = ("الوضع الصحي : زيادة في الوزن");
+      }
+      else if ((bmi >= 18.5)&(bmi < 25)){
+        document.getElementById("cond").style.display = "inline";
+        document.getElementById("data4").style.display = "inline";
+        document.getElementById("cond").innerHTML = ("الوضع الصحي : طبيعي");
+      }
+      else {
+        document.getElementById("cond").style.display = "inline";
+        document.getElementById("data4").style.display = "inline";
+        document.getElementById("cond").innerHTML = ("الوضع الصحي : نحافة");
+      };
+      document.getElementById("bmr-bt2").style.display = "inline";
+      document.getElementById("bmr-id4").style.display = "inline";
+      document.getElementById("bmr-bt4").style.display = "inline";
+      document.getElementById("bmr-id2").style.display = "inline";
+      
     }else {
       document.getElementById("erorr").style.display = "inline";
       document.getElementById("data1").style.display = "inline";
@@ -191,6 +232,8 @@ function submit() {
   
   
 };
-if (window.innerWidth > 999){
-  document.getElementById("hi").innerHTML = "<h1>اهلا بكم مع <br> دكتور بيشوى نان</h1>"
+function showSys() {
+  document.getElementById("idd5").style.display = "inline";
+  document.getElementById("bmr-id6").style.display = "inline";
+  document.getElementById("bmr-bt6").style.display = "inline";
 }
