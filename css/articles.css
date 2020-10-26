@@ -502,9 +502,9 @@ body {
 @media only screen and (min-width: 1000px){
     .section1 {
         width: 100vw;
-        height: 110vh;
+        height: 780px;
         background-image: url(img/Untitled-2@3x.png);
-        background-size: 50%;
+        background-size: 55%;
         background-repeat: no-repeat;
         background-position-y: 50px;
         background-position-x: center;
@@ -597,7 +597,6 @@ body {
     
 
     .footer {
-        margin-top: -300px;
         position: relative;
         bottom: 0px;
         padding-top: 20px;
