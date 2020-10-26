@@ -502,7 +502,7 @@ body {
 @media only screen and (min-width: 1000px){
     .section1 {
         width: 100vw;
-        height: 780px;
+        height: 800px;
         background-image: url(img/Untitled-2@3x.png);
         background-size: 55%;
         background-repeat: no-repeat;

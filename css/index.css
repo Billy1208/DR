@@ -748,8 +748,8 @@ form p {
         background: -webkit-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
         background: linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00C6A0",endColorstr="##00856B",GradientType=1);
-        padding-top: 12px;
-        padding-bottom: 9px;
+        padding-top: 11px;
+        padding-bottom: 10px;
         padding-right: 25px;
         padding-left: 25px;
         border: transparent;
@@ -929,8 +929,8 @@ form p {
         background: -webkit-linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
         background: linear-gradient(90deg, rgba(0, 198, 160, 1) 0%,rgba(0, 133, 107, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00C6A0",endColorstr="##00856B",GradientType=1);
-        padding-top: 11px;
-        padding-bottom: 9px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         padding-right: 60px;
         padding-left: 60px;
         border: transparent;
